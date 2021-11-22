@@ -1,0 +1,54 @@
+.img-logo {
+    height: 50px;
+    width: auto;
+}
+
+.main-img {
+    margin: 1px 0;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-fade {
+    transition: 2s !important;
+}
+
+.red-line {
+    margin-top: 30px;
+    height: 1px;
+    background-color: red;
+}
+
+.red-line-part {
+    width: 60%;
+    margin: 30px auto;
+    background-color: red;
+    height: 1px;
+}
+
+.card-body {
+    color: #fff;
+}
+
+.card {
+    background: #333;
+
+    a {
+        background-color: red;
+        border: none;
+    }
+}
+
+.card__display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}

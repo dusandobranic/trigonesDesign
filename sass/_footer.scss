@@ -1,0 +1,28 @@
+.footer {
+    color: white;
+    background-color: #000;
+}
+
+.social-media {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    a {
+        color: white;
+        margin: 5px;
+        font-size: 24px;
+    }
+}
+
+.footer-style {
+    margin-top: 20px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.text-red {
+    color: red;
+}

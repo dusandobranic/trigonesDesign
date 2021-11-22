@@ -6088,7 +6088,7 @@ a.close.disabled {
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 1.8s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6130,7 +6130,7 @@ a.close.disabled {
 .carousel-fade .active.carousel-item-right {
   z-index: 0;
   opacity: 0;
-  transition: opacity 0s 0.6s;
+  transition: opacity 0s 1.8s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -9685,4 +9685,134 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+.img-logo {
+  height: 50px;
+  width: auto;
+}
+
+.main-img {
+  margin: 1px 0;
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-fade {
+  transition: 2s !important;
+}
+
+.red-line {
+  margin-top: 30px;
+  height: 1px;
+  background-color: red;
+}
+
+.red-line-part {
+  width: 60%;
+  margin: 30px auto;
+  background-color: red;
+  height: 1px;
+}
+
+.card-body {
+  color: #fff;
+}
+
+.card {
+  background: #333;
+}
+
+.card a {
+  background-color: red;
+  border: none;
+}
+
+.card__display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.footer {
+  color: white;
+  background-color: #000;
+}
+
+.social-media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.social-media a {
+  color: white;
+  margin: 5px;
+  font-size: 24px;
+}
+
+.footer-style {
+  margin-top: 20px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.text-red {
+  color: red;
+}
+
+.navbar {
+  background-color: #000 !important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 20px;
+}
+
+.nav-item .active {
+  background-color: transparent !important;
+}
+
+.wrapper-nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-nav .nav .nav-link {
+  color: #fff;
+}
+
+.wrapper-nav .nav .nav-link:hover {
+  color: red;
+}
+
+.about {
+  margin: 60px 0;
+}
+
+.about h1 {
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.test {
+  height: 120vh;
 }

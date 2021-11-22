@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #000 !important;
+}
+
+.navbar-nav {
+    margin-left: auto;
+
+    .nav-link {
+        margin-left: 20px;
+    }
+}
+
+.nav-item {
+    .active {
+        background-color: transparent !important;
+    }
+}
+
+.wrapper-nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .nav {
+        .nav-link {
+            color: #fff;
+        }
+
+        .nav-link:hover{
+            color: red;
+        }
+    }
+}
