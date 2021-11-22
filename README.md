@@ -1,2 +1,2 @@
 # trigonesDesign
-Building a website fir my friend Nemanja
+Building a website for my BEST friend Nemanja
