@@ -9716,7 +9716,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .red-line-part {
   width: 60%;
-  margin: 30px auto;
+  margin: 60px auto;
   background-color: red;
   height: 1px;
 }
@@ -9734,11 +9734,22 @@ a.text-dark:hover, a.text-dark:focus {
   border: none;
 }
 
+.card a:hover {
+  background-color: white;
+  color: red;
+}
+
 .card__display {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   margin: 30px 0;
+}
+
+.carousel-caption {
+  background: black;
+  opacity: 0.8;
+  border-radius: 10px;
 }
 
 .footer {
@@ -9767,7 +9778,42 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-red {
+  color: white;
+}
+
+.text-red:hover {
   color: red;
+  text-decoration: none;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.email-form button {
+  background-color: red;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 8px;
+  margin-left: auto;
+}
+
+.email-form button:hover {
+  background-color: white;
+  color: red;
+}
+
+.email-form .col .email-input {
+  width: 350px;
+}
+
+.email-form .col .textarea {
+  width: 350px;
+  margin: 10px 0;
+  height: 100px;
 }
 
 .navbar {
@@ -9818,12 +9864,94 @@ a.text-dark:hover, a.text-dark:focus {
   color: black;
 }
 
+.projekti h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.projekti h2 {
+  margin-bottom: 20px;
+}
+
+.projekti .naslov {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.projekti p {
+  line-height: 1.9rem;
+}
+
+.projekti .opis {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.kontakt {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kontakt .krug {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.kontakt i {
+  background: black;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontakt h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 90px;
+}
+
+.kontakt .first {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.kontakt .card__display {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.kontakt .card {
+  width: 20rem !important;
+  border-radius: 10px;
+}
+
+.kontakt .card:not(:first-child) {
+  margin-left: 20px;
+}
+
 html {
   scroll-behavior: smooth !important;
 }
 
 body {
   background-color: #0f0f0f;
+  background-image: url(/images/bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
   color: white;
   padding-top: 68px;
 }

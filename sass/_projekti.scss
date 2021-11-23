@@ -1,0 +1,27 @@
+.projekti {
+    h1 {
+        font-size: 52px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .naslov {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    p {
+        line-height: 1.9rem;
+    }
+
+    .opis {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}

@@ -24,5 +24,43 @@
 }
 
 .text-red {
+    color: white;
+}
+
+.text-red:hover {
     color: red;
+    text-decoration: none;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    button {
+        background-color: red;
+        color: white;
+        padding: 5px 30px;
+        border-radius: 8px;
+        margin-left: auto;
+    }
+
+    button:hover {
+        background-color: white;
+        color: red;
+    }
+
+    .col {
+        
+        .email-input {
+            width: 350px;
+        }
+
+        .textarea {
+            width: 350px;
+            margin: 10px 0;
+            height: 100px;
+        }
+    }
 }
