@@ -12,10 +12,10 @@
 
 <body>
     <div>
-        <nav id="navbar-example2" class="navbar fixed-top navbar-light bg-light">
+        <nav id="navbar-example2" class="navbar fixed-top">
             <div class="container wrapper-nav">
                 <a href="index.html"><img class="img-logo" src="/images/logo.jpg" alt="Logo"></a>
-                <ul class="nav nav-pills">
+                <ul class="nav nav-pills" id="myNavbar">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
@@ -23,7 +23,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
+                        <a class="nav-link" href="#cards">Instagram</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -33,11 +33,10 @@
         </nav>
     </div>
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="1">
-        <h4 id="home"></h4>
         <section>
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-interval="4000"
                 data-ride="carousel">
-                <div class="carousel-inner">
+                <div id="home" class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="main-img" src="/images/Spavaca soba 1.jpg" class="d-block w-100">
                     </div>
@@ -60,7 +59,9 @@
                 </button>
             </div>
         </section>
-        <h4 id="about"></h4>
+
+        <div id="about" class="red-line-part"></div>
+
         <section>
             <div class="container">
                 <div class="row about">
@@ -84,11 +85,10 @@
             </div>
         </section>
 
-        <div class="red-line-part"></div>
+        <div id="cards" class="red-line-part"></div>
 
-        <h4 id="gallery"></h4>
         <div class="container">
-            <div class="row card__display">
+            <div class="row about card__display">
                 <div class="card" style="width: 18rem;">
                     <img src="/images/Kuca 1.jpg" class="card-img-top">
                     <div class="card-body">
@@ -121,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row card__display">
+            <div class="row about card__display">
                 <div class="card" style="width: 18rem;">
                     <img src="/images/Kuca 1.jpg" class="card-img-top">
                     <div class="card-body">
@@ -156,9 +156,8 @@
             </div>
         </div>
 
-        <div class="red-line-part"></div>
+        <div id="contact" class="red-line-part"></div>
 
-        <h4 id="contact"></h4>
         <footer class="footer">
             <div class="red-line"></div>
             <div class="container footer-style">
