@@ -3,7 +3,21 @@
     background-image: url('/images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -20;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h1 {
+        font-size: 92px !important;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 32px !important;
+        font-weight: 400;
+    }
 }

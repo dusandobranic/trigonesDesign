@@ -1,5 +1,5 @@
 .kontakt {
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,24 +25,30 @@
     h1 {
         text-transform: uppercase;
         text-align: center;
-        font-size: 90px;
+        font-size: 72px;
     }
 
     .first {
         text-align: center;
-        font-size: 40px;
+        font-size: 32px;
         text-transform: uppercase;
-    }
-
-    .card__display {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
     }
 
     .card {
         width: 20rem !important;
         border-radius: 10px;
+    }
+
+    .card-body {
+        a {
+            background-color: transparent;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
     }
 
     .card:not(:first-child) {

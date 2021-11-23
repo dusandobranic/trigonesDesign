@@ -18,6 +18,19 @@
         line-height: 1.9rem;
     }
 
+    .btn {
+        background-color: red;
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: red;
+    }
+
+    .btn:focus {
+        box-shadow: none;
+    }
+
     .opis {
         margin-top: 20px;
         display: flex;
