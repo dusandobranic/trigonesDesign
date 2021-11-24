@@ -9689,13 +9689,7 @@ a.text-dark:hover, a.text-dark:focus {
 .img-logo {
   height: 50px;
   width: auto;
-}
-
-.main-img {
-  margin: 1px 0;
-  height: 80vh;
-  width: 100%;
-  object-fit: cover;
+  background-color: #000;
 }
 
 .carousel-control-next,
@@ -9819,6 +9813,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar {
   background-color: #000 !important;
+  z-index: 1000000000;
 }
 
 .navbar-nav {
@@ -9868,7 +9863,47 @@ a.text-dark:hover, a.text-dark:focus {
 
 .intro img {
   max-width: 100%;
-  height: 500px;
+  height: 100%;
+}
+
+.intro .relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.intro .head {
+  z-index: 1000;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: inherit;
+}
+
+.intro .head h1 {
+  font-size: 48px;
+}
+
+.intro .head h4 {
+  font-size: 38px;
+}
+
+.intro .head p {
+  font-size: 28px;
+  letter-spacing: 0.5rem;
+}
+
+.intro .head .heading {
+  color: #fff;
+  line-height: 3.8rem;
+  background-color: #333;
+  opacity: 0.7;
+  padding: 5px 10px;
+  border-radius: 8px;
 }
 
 .projekti h1 {
@@ -9951,7 +9986,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .kontakt .card {
   margin-top: 80px;
-  width: 20rem !important;
+  min-width: 18rem;
   border-radius: 10px;
 }
 
@@ -9969,7 +10004,38 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1128px) {
+  .card__display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    max-width: auto;
+  }
+  .email-form input {
+    width: 230px !important;
+  }
+  .email-form textarea {
+    width: 230px !important;
+  }
+  .email-form button {
+    margin: auto;
+  }
+  .kontakt .card {
+    min-width: 11rem;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 414px) {
+  .email-form input {
+    width: 300px !important;
+  }
+  .email-form textarea {
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .navbar {
     width: 100%;
     display: flex;
@@ -9996,8 +10062,20 @@ a.text-dark:hover, a.text-dark:focus {
   .mobile {
     display: block !important;
   }
-  .email-form button {
-    margin: auto;
+  .head .heading {
+    padding: 3px !important;
+    line-height: 0.8rem;
+    border-radius: 3px;
+  }
+  .head h1 {
+    font-size: 24px;
+  }
+  .head h4 {
+    font-size: 22px;
+  }
+  .head p {
+    font-size: 20px;
+    letter-spacing: 0.2rem;
   }
 }
 
@@ -10007,6 +10085,21 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .intro img {
     height: fit-content;
+  }
+  .intro .head .heading {
+    padding: 3px !important;
+    line-height: 1.1rem;
+    border-radius: 3px;
+  }
+  .intro .head h1 {
+    font-size: 16px;
+  }
+  .intro .head h4 {
+    font-size: 14px;
+  }
+  .intro .head p {
+    font-size: 12px;
+    letter-spacing: 0.2rem;
   }
   .email-form input {
     width: 250px !important;

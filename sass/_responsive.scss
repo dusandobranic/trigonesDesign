@@ -1,4 +1,47 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1128px) {
+    .card__display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 20px;
+        max-width: auto;
+    }
+
+    .email-form {
+        input {
+            width: 230px !important;
+        }
+
+        textarea {
+            width: 230px !important;
+        }
+
+        button {
+            margin: auto;
+        }
+    }
+
+    .kontakt {
+
+        .card {
+            min-width: 11rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 414px) {
+    .email-form {
+        input {
+            width: 300px !important;
+        }
+
+        textarea {
+            width: 300px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
     .navbar {
         width: 100%;
 
@@ -32,15 +75,29 @@
     .desktop {
         display: none;
     }
-
+    
     .mobile {
         display: block !important;
     }
 
-    .email-form {
+    .head {
+        .heading {
+            padding: 3px !important;
+            line-height: 0.8rem;
+            border-radius: 3px;
+        }
 
-        button {
-            margin: auto;
+        h1 {
+            font-size: 24px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 20px;
+            letter-spacing: 0.2rem;
         }
     }
 }
@@ -55,6 +112,27 @@
     .intro {
         img {
             height: fit-content;
+        }
+
+        .head {
+            .heading {
+                padding: 3px !important;
+                line-height: 1.1rem;
+                border-radius: 3px;
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 12px;
+                letter-spacing: 0.2rem;
+            }
         }
     }
 
