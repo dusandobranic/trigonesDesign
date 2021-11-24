@@ -9919,6 +9919,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .projekti p {
@@ -10036,6 +10037,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media screen and (max-width: 767px) {
+  .projekti .naslov {
+    display: block;
+  }
   .navbar {
     width: 100%;
     display: flex;
@@ -10074,8 +10078,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 22px;
   }
   .head p {
-    font-size: 20px;
-    letter-spacing: 0.2rem;
+    display: none !important;
   }
 }
 
@@ -10098,8 +10101,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 14px;
   }
   .intro .head p {
-    font-size: 12px;
-    letter-spacing: 0.2rem;
+    display: none !important;
   }
   .email-form input {
     width: 250px !important;
