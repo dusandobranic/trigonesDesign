@@ -1,0 +1,57 @@
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .krug {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 10px;
+    }
+
+    i {
+        background: black;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 62px;
+    }
+
+    .first {
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+
+    .card {
+        margin-top: 80px;
+        width: 20rem !important;
+        border-radius: 10px;
+    }
+
+    .card-body {
+        a {
+            background-color: transparent;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+    }
+
+    .card:not(:first-child) {
+        margin-left: 20px;
+    }
+}

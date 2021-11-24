@@ -1,0 +1,66 @@
+.img-logo {
+    height: 50px;
+    width: auto;
+}
+
+.main-img {
+    margin: 1px 0;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-fade {
+    transition: 2s !important;
+}
+
+.red-line {
+    margin-top: 30px;
+    height: 1px;
+    background-color: red;
+}
+
+.red-line-part {
+    width: 60%;
+    margin: 60px auto;
+    background-color: red;
+    height: 1px;
+}
+
+.card-body {
+    color: #fff;
+}
+
+.card {
+    background: #333;
+
+    a {
+        background-color: red;
+        border: none;
+    }
+
+    a:hover {
+        background-color: white;
+        color: red;
+    }
+}
+
+.card__display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    gap: 10px;
+}
+
+.carousel-caption {
+    background: black;
+    opacity: 0.8;
+    border-radius: 10px;
+}
