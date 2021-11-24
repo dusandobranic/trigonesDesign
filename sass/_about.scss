@@ -4,6 +4,15 @@
     h1 {
         margin-bottom: 20px;
     }
+
+    .card {
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
 }
 
 .about-h {

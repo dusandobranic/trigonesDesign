@@ -1,5 +1,4 @@
 .kontakt {
-    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,6 +34,7 @@
     }
 
     .card {
+        margin-top: 80px;
         width: 20rem !important;
         border-radius: 10px;
     }

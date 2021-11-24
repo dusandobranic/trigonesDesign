@@ -9855,32 +9855,20 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 20px;
 }
 
+.about .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .about-h {
   text-align: center;
 }
 
-.jumbotron {
-  height: 55vh;
-  background-image: url("/images/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.3;
-  z-index: -20;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.jumbotron h1 {
-  font-size: 92px !important;
-  font-weight: 500;
-}
-
-.jumbotron p {
-  font-size: 32px !important;
-  font-weight: 400;
+.intro img {
+  max-width: 100%;
+  height: 500px;
 }
 
 .projekti h1 {
@@ -9922,8 +9910,11 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: space-between;
 }
 
+.mobile {
+  display: none !important;
+}
+
 .kontakt {
-  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9959,6 +9950,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .kontakt .card {
+  margin-top: 80px;
   width: 20rem !important;
   border-radius: 10px;
 }
@@ -9975,6 +9967,57 @@ a.text-dark:hover, a.text-dark:focus {
 
 .kontakt .card:not(:first-child) {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card__display {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
+    max-width: auto;
+  }
+  .intro img {
+    height: fit-content;
+  }
+  .kontakt .card {
+    margin-top: auto;
+    width: 350px !important;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .email-form button {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .navbar ul {
+    display: none !important;
+  }
+  .intro img {
+    height: fit-content;
+  }
+  .email-form input {
+    width: 250px !important;
+  }
+  .email-form textarea {
+    width: 250px !important;
+  }
+  .kontakt .card {
+    margin-top: auto;
+    width: 250px !important;
+  }
 }
 
 html {
