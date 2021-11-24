@@ -10050,7 +10050,7 @@ a.text-dark:hover, a.text-dark:focus {
     max-width: auto;
   }
   .intro img {
-    height: fit-content;
+    height: 100%;
   }
   .kontakt .card {
     margin-top: auto;
@@ -10084,7 +10084,7 @@ a.text-dark:hover, a.text-dark:focus {
     display: none !important;
   }
   .intro img {
-    height: fit-content;
+    height: 100%;
   }
   .intro .head .heading {
     padding: 3px !important;
