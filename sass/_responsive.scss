@@ -42,6 +42,11 @@
 }
 
 @media screen and (max-width: 767px) {
+    .projekti {
+        .naslov {
+            display: block;
+        }
+    }
     .navbar {
         width: 100%;
 
@@ -96,8 +101,7 @@
         }
 
         p {
-            font-size: 20px;
-            letter-spacing: 0.2rem;
+            display: none !important;
         }
     }
 }
@@ -130,8 +134,7 @@
             }
 
             p {
-                font-size: 12px;
-                letter-spacing: 0.2rem;
+                display: none !important;
             }
         }
     }
